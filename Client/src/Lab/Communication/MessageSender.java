@@ -13,7 +13,7 @@ class MessageSender {
     void sendMessage(MessageFormer mf) throws IOException{
         message=mf.message;
             byte[] buffer = new byte[100];
-            SocketAddress address = new InetSocketAddress(InetAddress.getLocalHost(),8888);
+            SocketAddress address = new InetSocketAddress(InetAddress.getLocalHost(),14087);
             DatagramPacket packet;
             while(message.length>0){
                 if(message.length>100){
